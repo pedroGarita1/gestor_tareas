@@ -17,11 +17,16 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <!-- ---- css ---- -->
-<link rel="stylesheet" href="../public/lib/b5/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="../public/lib/b5/css/bootstrap.min.css"> -->
 <link rel="stylesheet" href="../public/lib/fa/css/all.css">
-<link rel="stylesheet" href="../public/css/style.css">
+<link rel="stylesheet" href="../public/css/nav_inicio.css">
 <!-- ---- js ---- -->
 <script src="../public/lib/jquery3.js"></script>
-<script src="../public/lib/b5/js/bootstrap.min.js"></script>
+<script src="../public/lib/b5/js/bootstrap.bundle.min.js"></script>
+<script src="../public/js/scripts.js"></script>
+<script src="../public/lib/Chart.min.js"></script>
 <script src="../public/lib/fa/js/all.js"></script>
-<script src="../public/js/controller.js"></script>
+<script src="../public/js/chart-area"></script>
+<script src="../public/js/chart-bar"></script>
+<script src="../public/lib/datatables@latest.js"></script>
+<script src="../public/js/datatables.js"></script>
