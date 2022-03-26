@@ -3,7 +3,7 @@
         <div class="sb-sidenav-menu">
             <div class="nav">
                 <div class="sb-sidenav-menu-heading">General</div>
-                <a class="nav-link" href="inicio.php">
+                <a class="nav-link" href="../../panel/inicio.php">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Inicio
                 </a>
@@ -15,7 +15,7 @@
                 </a>
                 <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="tareas/mostrar_tareas.php">Ver tareas</a>
+                        <a class="nav-link" href="mostrar_tareas.php">Ver tareas</a>
                     </nav>
                 </div>
             </div>
