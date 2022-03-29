@@ -8,6 +8,6 @@
     </div>
     <!-- Navbar-->
     <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-        <a class="btn btn-danger" href="../procesos/usuarios/salir.php"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        <a class="btn btn-danger" href="../../procesos/usuarios/salir.php"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
     </ul>
 </nav>

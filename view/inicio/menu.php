@@ -17,6 +17,9 @@
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="tareas/mostrar_tareas.php">Ver tareas</a>
                     </nav>
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" href="asignacion_tareas.php">Asignar tareas</a>
+                    </nav>
                 </div>
             </div>
         </div>

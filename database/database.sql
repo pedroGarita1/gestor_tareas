@@ -8,6 +8,9 @@ CREATE TABLE tareas.t_usuarios (
   apellido_paterno VARCHAR(245) NOT NULL,
   apellido_materno VARCHAR(245) NOT NULL,
   PRIMARY KEY (id_usuarios));
+  #estado_tarea
+  # 0 no entregada
+  # 1 entregado
 CREATE TABLE tareas.t_registro_tareas (
   id_tareas INT NOT NULL AUTO_INCREMENT,
   estado_tarea VARCHAR(245) NOT NULL,
@@ -28,6 +31,7 @@ ADD CONSTRAINT fk_usuario
   REFERENCES tareas.t_usuarios (id_usuarios)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
+#estado_asignacion
 # 1 Asignado
 # 2 Finalizado
 CREATE TABLE tareas.t_cat_asignacion_tarea (
