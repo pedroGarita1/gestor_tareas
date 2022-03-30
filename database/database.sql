@@ -9,6 +9,7 @@ CREATE TABLE tareas.t_usuarios (
   apellido_materno VARCHAR(245) NOT NULL,
   PRIMARY KEY (id_usuarios));
 #estado_asignacion
+# 0 finaliza hoy
 # 1 Por asignar
 # 2 Asignado
 # 3 Finalizado
@@ -24,10 +25,10 @@ CREATE TABLE tareas.t_asignacion_tarea (
   fecha_insercion DATETIME NOT NULL DEFAULT now(),
   PRIMARY KEY (id_asignacion_tarea));
 
-ALTER TABLE tareas.t_cat_asignacion_tarea
+ALTER TABLE tareas.t_asignacion_tarea
 ADD INDEX fk_usuario_idx (fk_usuarios ASC);
 ;
-ALTER TABLE tareas.t_cat_asignacion_tarea
+ALTER TABLE tareas.t_asignacion_tarea
 ADD CONSTRAINT fk_usuario
   FOREIGN KEY (fk_usuarios)
   REFERENCES tareas.t_usuarios (id_usuarios)

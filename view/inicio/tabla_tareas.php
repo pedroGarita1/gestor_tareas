@@ -8,6 +8,7 @@
             <th>Editar</th>
             <th>Finalizar</th>
             <th>Volver a asignar</th>
+            <th>Eliminar</th>
         </tr>
     </thead>
     <tbody>
@@ -62,6 +63,11 @@
         <?php
             }
         ?>
+            <td class="text-center">
+                <a class="btn btn-danger" href="../procesos/asignaciones/eliminar_asignacion.php?id_asignacion=<?= $ver['id_asignacion_tarea']?>">
+                    <i class="fa-solid fa-delete-left"></i>
+                </a>
+            </td>
         </tr>
     <?php
         }

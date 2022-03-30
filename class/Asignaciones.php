@@ -78,5 +78,16 @@
             $resultado = mysqli_query($conexion,$sql);
             return $resultado;
         }
+        public function eliminar_asignacion($id_asignacion, $nombre_usuario){
+            $c = new Conector();
+            $conexion = $c->conexion();
+            $consulta = "SELECT id_usuarios FROM t_usuarios WHERE usuario = '$nombre_usuario'";
+            $resultado = mysqli_query($conexion, $consulta);
+            $id_usuario = mysqli_fetch_row($resultado);
+
+            $eliminar = "DELETE FROM t_asignacion_tarea WHERE id_asignacion_tarea ='$id_asignacion' AND fk_usuarios = $id_usuario[0]";
+			$result = mysqli_query($conexion,$eliminar);
+            return $result;
+        }
     }
 ?>

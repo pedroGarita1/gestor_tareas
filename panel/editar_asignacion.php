@@ -31,7 +31,7 @@
                 <div class="col-md-6 mt-5">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Agregar Asignacion</h5>
+                            <h5 class="card-title text-center">Editar Asignacion</h5>
                             <p class="card-text">
                                 <form action="../procesos/asignaciones/actualizar_asignacion.php" method="post">
                                     <input type="hidden" name="id_asignacion" value="<?= $id_asignacion?>">

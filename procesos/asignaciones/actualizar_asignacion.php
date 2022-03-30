@@ -14,12 +14,12 @@
     $fecha_inicioV = strtotime($fecha_inicio);
     $fecha_finalV = strtotime($fecha_final);
 
-    if($fecha_actual < $fecha_inicio && $fecha_actual < $fecha_final){
-        $estado_asignacion = 1;
-    }elseif($fecha_actual > $fecha_inicio && $fecha_actual < $fecha_final){
-        $estado_asignacion = 2;
-    }elseif($fecha_actual > $fecha_inicio && $fecha_actual > $fecha_final){
-        $estado_asignacion = 3;
+    if($fecha_inicioV >= $fecha_actual && $fecha_finalV > $fecha_actual){
+        $estado_asignacion = 1;//por
+    }elseif($fecha_inicioV <= $fecha_actual && $fecha_finalV > $fecha_actual){
+        $estado_asignacion = 2;//asig
+    }elseif($fecha_inicioV < $fecha_actual && $fecha_finalV <= $fecha_actual){
+        $estado_asignacion = 3;//fin
     }
 
 

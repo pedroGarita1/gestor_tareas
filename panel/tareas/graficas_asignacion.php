@@ -18,8 +18,8 @@
         $valoresY[] = $ver[0];
         $valoresX[] = $estado;
     }
-    $datosX = json_encode($valoresX);
-    $datosY = json_encode($valoresY);
+    @$datosX = json_encode($valoresX);
+    @$datosY = json_encode($valoresY);
 ?>
 <div class="col-xl-12">
     <div class="card mb-4">
