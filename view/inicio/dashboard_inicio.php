@@ -1,3 +1,8 @@
+<?php
+    $nombre_usuario = $_SESSION['usuario'];
+    $Tareas = new Asignaciones();
+    $datos = $Tareas->mostrar_asignacion($nombre_usuario);
+?>
 <div id="layoutSidenav">
     <?php require_once "../view/inicio/menu.php";?>
     <div id="layoutSidenav_content">
@@ -8,63 +13,9 @@
                     <li class="breadcrumb-item active">Dashboard</li>
                 </ol>
                 <div class="row">
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-primary text-white mb-4">
-                            <div class="card-body">Tareas Asignadas</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">Ver Detalles</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
+                    
+                    <div id="graficas_asignaciones">
                     </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-warning text-white mb-4">
-                            <div class="card-body">Tareas por Finalizar</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">Ver Detalles</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-success text-white mb-4">
-                            <div class="card-body">Tareas Entregadas</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">Ver Detalles</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-danger text-white mb-4">
-                            <div class="card-body">Tareas Finalizadas</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">Ver Detalles</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-chart-area me-1"></i>
-                                Grafica tareas entregadas
-                            </div>
-                            <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-chart-bar me-1"></i>
-                                Grafica tareas no entregadas
-                            </div>
-                            <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                        </div>
-                    </div>
-                </div>
                 <div class="card mb-4">
                     <div class="card-header">
                         <i class="fas fa-table me-1"></i>
@@ -78,3 +29,8 @@
         </main>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#graficas_asignaciones').load('tareas/graficas_asignacion.php');
+    });
+</script>

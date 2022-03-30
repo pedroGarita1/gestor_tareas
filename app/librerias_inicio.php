@@ -30,3 +30,5 @@
 <script src="../public/js/chart-bar"></script>
 <script src="../public/lib/datatables@latest.js"></script>
 <script src="../public/js/datatables.js"></script>
+<script src="../public/lib/plotly-2.9.0.min.js"></script>
+<script src="../public/js/grafica.js"></script>

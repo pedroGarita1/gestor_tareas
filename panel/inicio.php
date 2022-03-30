@@ -1,5 +1,7 @@
 <?php 
     session_start();
+    require_once "../app/conector.php";
+    require_once "../class/Asignaciones.php";
     if(isset($_SESSION['usuario'])){
 ?>
 <!DOCTYPE html>
